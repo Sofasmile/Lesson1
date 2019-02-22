@@ -41,19 +41,27 @@ class Task {
 
     //Task 1.4 - Factorial (implemented using a recursion)
     public int factorialRecursion(int x) {
-        if (x == 1) {
-            return 1;
+        if (x <= 0) {
+            return 0;
+        } else {
+            if (x == 1) {
+                return 1;
+            }
+            return x * factorialRecursion(x - 1);
         }
-        return x * factorialRecursion(x - 1);
     }
 
     //Task 1.4 - Factorial (implemented using a loop)
     public int factorialLoop(int x) {
-        int result = 1;
-        for (int i = x; i > 0; i--) {
-            result *= i;
+        if (x <= 0) {
+            return 0;
+        } else {
+            int result = 1;
+            for (int i = x; i > 0; i--) {
+                result *= i;
+            }
+            return result;
         }
-        return result;
     }
 
     //Task 1.4 - Fibonacci number (implemented using a recursion)

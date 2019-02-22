@@ -10,7 +10,7 @@ public class Program {
         task.drawHromb(5);
 
         //raise the number to a power
-        System.out.println(task.powerNumber(2, 6));
+        System.out.println(task.powerNumber(-2, 5));
 
         //Fibonacci number - implemented using a loop
         System.out.println(task.fibonachiLoop(7));
@@ -26,20 +26,15 @@ public class Program {
 
         //Sorting time
         //Sort shell = new Sort();
-       // shell.shellSort(); // t ≈ 0,15 s
-
-        Sort bubble = new Sort();
+        //shell.shellSort(); // t ≈ 0,15 s
+        /*Sort bubble = new Sort();
         bubble.bubbleSort(); // t ≈ 2 072,31 s
-        /*Sort insertion = new Sort();
+        Sort insertion = new Sort();
         insertion.insertionSort();// t ≈ 105,04 s
         Sort selection = new Sort();
         selection.selectionSort();// t ≈ 508,44 s
         Sort quick = new Sort();
         quick.quickSort();// t ≈ 0,09 s
-        Sort marge = new Sort();
-        marge.margeSort();// t ≈ 0,22 s
-        Sort bit = new Sort();
-        bit.bitSort();// t ≈ 0,21 s
         */
     }
 }
